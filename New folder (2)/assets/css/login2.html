@@ -1,0 +1,21 @@
+<div class="login-form">
+  <form action="process_form.php" method="POST" onsubmit="document.getElementById('coins').value = localStorage.getItem('coins');">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <label for="confirm">Confirm Password</label>
+    <input type="password" name="confirm" id="confirm" required>
+    <label for="phone_number">Phone Number</label>
+    <input type="number" name="phone_number" id="phone_number" required>
+    <label for="payment_method">Payment Method</label>
+    <select name="payment_method" id="payment_method">
+      <option value="easypaisa">EasyPaisa</option>
+      <option value="jazzcash">JazzCash</option>
+    </select>
+    <input type="hidden" name="coins" id="coins">
+    <input class="submit-button" type="submit" value="Submit">
+  </form>
+</div>
